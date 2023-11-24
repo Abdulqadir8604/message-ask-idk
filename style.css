@@ -1,0 +1,74 @@
+/* FILEPATH: /h:/web projects/message-only-yes/style.css */
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 26px;
+    line-height: 1.5;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#message {
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: #fff 1px solid;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #message {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+/* Additional Mobile Styles */
+@media (max-width: 480px) {
+    #message {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
